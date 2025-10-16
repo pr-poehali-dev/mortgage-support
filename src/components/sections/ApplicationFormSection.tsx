@@ -102,14 +102,27 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
                     </label>
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6"
-                  >
-                    Отправить заявку
-                    <Icon name="Send" className="ml-2" size={20} />
-                  </Button>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <Button 
+                      type="submit" 
+                      size="lg" 
+                      className="bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6"
+                    >
+                      Отправить заявку
+                      <Icon name="Send" className="ml-2" size={20} />
+                    </Button>
+                    
+                    <Button 
+                      type="button"
+                      size="lg"
+                      variant="outline"
+                      className="text-lg py-6 border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                      onClick={() => window.location.href = 'tel:+79241358300'}
+                    >
+                      <Icon name="Phone" className="mr-2" size={20} />
+                      Позвонить
+                    </Button>
+                  </div>
 
                   <div className="flex items-center justify-center gap-4 pt-4">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
