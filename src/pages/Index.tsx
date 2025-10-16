@@ -55,8 +55,8 @@ const Index = () => {
     (e.target as HTMLFormElement).reset();
   };
 
-  const scrollToForm = () => {
-    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+  const openTelegram = () => {
+    window.open('https://t.me/Nastasssl', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -72,7 +72,7 @@ const Index = () => {
             <a href="#how-it-works" className="text-sm hover:text-primary transition-colors">Как работаем</a>
             <a href="#reviews" className="text-sm hover:text-primary transition-colors">Отзывы</a>
             <a href="#calculator" className="text-sm hover:text-primary transition-colors">Калькулятор</a>
-            <Button onClick={scrollToForm} size="sm">Оставить заявку</Button>
+            <Button onClick={openTelegram} size="sm">Оставить заявку</Button>
           </div>
         </div>
       </nav>
@@ -105,7 +105,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <Button onClick={scrollToForm} size="lg" className="w-full md:w-auto">
+              <Button onClick={openTelegram} size="lg" className="w-full md:w-auto">
                 Получить одобрение за 24 часа
               </Button>
             </div>
@@ -513,7 +513,7 @@ const Index = () => {
                   </Label>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
+                <Button type="button" onClick={openTelegram} size="lg" className="w-full">
                   Получить консультацию бесплатно
                 </Button>
 
