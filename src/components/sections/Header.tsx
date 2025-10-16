@@ -13,7 +13,7 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
           <img 
             src="https://cdn.poehali.dev/files/a4a9e5b6-b1a0-494c-ad84-e97aa91e5da1.png" 
             alt="МангоДом" 
-            className="h-12 w-auto brightness-0 invert"
+            className="h-12 w-auto"
           />
         </div>
         <div className="hidden md:flex items-center gap-6">
