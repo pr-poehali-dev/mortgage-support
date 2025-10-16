@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -42,6 +43,9 @@ const Footer = () => {
           <div className="text-sm opacity-80">
             <p>© 2025 ИП Молорова А.А. Все права защищены.</p>
             <p className="text-xs mt-1">ИНН 250811103854</p>
+            <Link to="/privacy" className="text-xs hover:text-accent transition-colors underline mt-1 block">
+              Политика конфиденциальности
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <a 
