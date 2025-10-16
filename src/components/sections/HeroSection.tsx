@@ -1,9 +1,42 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { useEffect, useState } from 'react';
 
 interface HeroSectionProps {
   onTelegramClick: () => void;
 }
+
+const AnimatedCounter = ({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTime: number;
+    let animationFrame: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const percentage = Math.min(progress / duration, 1);
+      
+      const easeOutQuad = 1 - Math.pow(1 - percentage, 3);
+      const current = Math.floor(easeOutQuad * target);
+      
+      setCount(current);
+
+      if (percentage < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setCount(target);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [target, duration]);
+
+  return <span>{count}{suffix}</span>;
+};
 
 const HeroSection = ({ onTelegramClick }: HeroSectionProps) => {
   return (
@@ -27,15 +60,21 @@ const HeroSection = ({ onTelegramClick }: HeroSectionProps) => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center pt-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary">2%</div>
+              <div className="text-4xl font-bold text-primary">
+                <AnimatedCounter target={2} suffix="%" />
+              </div>
               <div className="text-sm text-muted-foreground">Минимальная ставка</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent">20 лет</div>
+              <div className="text-4xl font-bold text-accent">
+                <AnimatedCounter target={20} suffix=" лет" />
+              </div>
               <div className="text-sm text-muted-foreground">Срок кредита</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary">96%</div>
+              <div className="text-4xl font-bold text-primary">
+                <AnimatedCounter target={96} suffix="%" />
+              </div>
               <div className="text-sm text-muted-foreground">Одобрение заявок</div>
             </div>
           </div>
