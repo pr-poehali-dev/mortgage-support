@@ -732,7 +732,7 @@ const Index = () => {
                 <Icon name="MessageCircle" size={22} className="text-white" />
               </a>
               <a 
-                href="https://t.me/Nastasssl" 
+                href="https://t.me/nedvizimost_rf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#0088cc] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
@@ -741,7 +741,7 @@ const Index = () => {
                 <Icon name="Send" size={20} className="text-white" />
               </a>
               <a 
-                href="https://instagram.com/mangodom_vl" 
+                href="https://www.instagram.com/mangodomm?igsh=MTQ2bmFjOGxhMnhrMA==" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
@@ -750,7 +750,7 @@ const Index = () => {
                 <Icon name="Instagram" size={20} className="text-white" />
               </a>
               <a 
-                href="https://youtube.com/@mangodom" 
+                href="https://youtube.com/channel/UCGsygDFJ6lQfhXoy8k3akZA?si=47hjbRRgwA9KpA9I" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
