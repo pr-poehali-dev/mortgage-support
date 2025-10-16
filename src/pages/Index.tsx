@@ -105,7 +105,7 @@ const Index = () => {
   };
 
   const openTelegram = () => {
-    window.open('https://t.me/Nastasssl', '_blank', 'noopener,noreferrer');
+    window.open('https://t.me/nedvizimost_rf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -139,6 +139,10 @@ const Index = () => {
             <a href="#how-it-works" className="text-sm hover:text-primary transition-colors">Как работаем</a>
             <a href="#reviews" className="text-sm hover:text-primary transition-colors">Отзывы</a>
             <a href="#calculator" className="text-sm hover:text-primary transition-colors">Калькулятор</a>
+            <Button onClick={openTelegram} size="sm" variant="outline" className="gap-2 hover:bg-[#0088cc] hover:text-white hover:border-[#0088cc] transition-all">
+              <Icon name="Send" size={16} />
+              Telegram
+            </Button>
             <Button onClick={openTelegram} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift">Оставить заявку</Button>
           </div>
         </div>
