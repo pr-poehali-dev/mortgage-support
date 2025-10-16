@@ -61,7 +61,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-10">
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-30">
         <div className="absolute top-[10%] left-[5%] float-animation-1 text-8xl">🥭</div>
         <div className="absolute top-[20%] right-[10%] float-animation-2 text-7xl">💰</div>
         <div className="absolute top-[40%] left-[15%] float-animation-3 text-6xl font-bold text-primary">2%</div>
