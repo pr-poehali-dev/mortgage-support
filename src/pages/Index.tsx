@@ -695,11 +695,11 @@ const Index = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  <a href="tel:+74231234567" className="hover:text-accent transition-colors">+7 (423) 123-45-67</a>
+                  <a href="tel:+79241358300" className="hover:text-accent transition-colors">8-924-135-83-00</a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
-                  <a href="mailto:info@mortgage-vl.ru" className="hover:text-accent transition-colors">info@mortgage-vl.ru</a>
+                  <a href="mailto:amolorova@inbox.ru" className="hover:text-accent transition-colors">amolorova@inbox.ru</a>
                 </div>
               </div>
             </div>
@@ -723,7 +723,7 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-4">
               <a 
-                href="https://wa.me/79991234567" 
+                href="https://wa.me/79241358300" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
