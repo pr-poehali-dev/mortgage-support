@@ -83,18 +83,41 @@ const Index = () => {
 
   const result = calculateMortgage();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const name = formData.get('name');
     const phone = formData.get('phone');
     
-    toast({
-      title: "Заявка отправлена!",
-      description: `Спасибо, ${name}! Мы свяжемся с вами в течение 30 минут.`,
-    });
-    
-    (e.target as HTMLFormElement).reset();
+    try {
+      const response = await fetch('https://functions.poehali.dev/ea5f6b22-33d4-4e01-9d42-d558eef5c089', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, phone }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Заявка отправлена!",
+          description: `Спасибо, ${name}! Мы свяжемся с вами в течение 30 минут.`,
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        toast({
+          title: "Ошибка",
+          description: "Не удалось отправить заявку. Попробуйте позже.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Проверьте подключение к интернету.",
+        variant: "destructive",
+      });
+    }
   };
 
   const openTelegram = () => {
