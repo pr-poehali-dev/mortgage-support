@@ -21,6 +21,10 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
           <a href="#how-it-works" className="text-sm hover:text-primary transition-colors">Как работаем</a>
           <a href="#reviews" className="text-sm hover:text-primary transition-colors">Отзывы</a>
           <a href="#calculator" className="text-sm hover:text-primary transition-colors">Калькулятор</a>
+          <a href="tel:+79241358300" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors">
+            <Icon name="Phone" size={16} />
+            8-924-135-83-00
+          </a>
           <Button onClick={onTelegramClick} size="sm" variant="outline" className="gap-2 hover:bg-[#0088cc] hover:text-white hover:border-[#0088cc] transition-all">
             <Icon name="Send" size={16} />
             Telegram
