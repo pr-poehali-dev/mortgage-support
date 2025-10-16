@@ -600,6 +600,24 @@ const Index = () => {
               >
                 <Icon name="Send" size={20} className="text-white" />
               </a>
+              <a 
+                href="https://instagram.com/mangodom_vl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="Instagram"
+              >
+                <Icon name="Instagram" size={20} className="text-white" />
+              </a>
+              <a 
+                href="https://youtube.com/@mangodom" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="YouTube"
+              >
+                <Icon name="Youtube" size={20} className="text-white" />
+              </a>
             </div>
           </div>
         </div>
