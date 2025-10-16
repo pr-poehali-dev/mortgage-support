@@ -559,7 +559,7 @@ const Index = () => {
             <p className="text-lg opacity-70">Более 1200 семей уже получили ипотеку с нашей помощью</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="hover-lift">
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
@@ -619,6 +619,28 @@ const Index = () => {
                   Всем, кто сомневается — очень рекомендую обратиться к Анастасии. Лучшего эксперта вам не найти!"
                 </p>
                 <p className="text-xs opacity-60">2ГИС</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    АИ
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Александра Ильина</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Тот редкий случай, когда прекрасно ВСЕ! Анастасия поможет с выбором и возьмет на себя решение тонких вопросов, если таковые возникнут в процессе оформления сделки с недвижимостью. Всегда на связи и буквально получаете ответ на любой возникающий вопрос👍🏼"
+                </p>
+                <p className="text-xs opacity-60">13 февраля 2025, 2ГИС</p>
               </CardContent>
             </Card>
           </div>
