@@ -171,4 +171,121 @@
     background-size: 200% 200%;
     animation: gradient-shift 2s ease infinite;
   }
+
+  .float-animation-1 {
+    animation: float-1 20s ease-in-out infinite;
+  }
+
+  .float-animation-2 {
+    animation: float-2 25s ease-in-out infinite;
+  }
+
+  .float-animation-3 {
+    animation: float-3 30s ease-in-out infinite;
+  }
+
+  .float-animation-4 {
+    animation: float-4 22s ease-in-out infinite;
+  }
+
+  .float-animation-5 {
+    animation: float-5 28s ease-in-out infinite;
+  }
+
+  .float-animation-6 {
+    animation: float-6 24s ease-in-out infinite;
+  }
+
+  @keyframes float-1 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(100px, -100px) rotate(90deg);
+    }
+    50% {
+      transform: translate(200px, 50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(50px, 150px) rotate(270deg);
+    }
+  }
+
+  @keyframes float-2 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-120px, 80px) rotate(-90deg);
+    }
+    50% {
+      transform: translate(-50px, -120px) rotate(-180deg);
+    }
+    75% {
+      transform: translate(100px, -50px) rotate(-270deg);
+    }
+  }
+
+  @keyframes float-3 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+      transform: translate(150px, 100px) rotate(120deg);
+    }
+    66% {
+      transform: translate(-100px, -80px) rotate(240deg);
+    }
+  }
+
+  @keyframes float-4 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-80px, -120px) rotate(80deg);
+    }
+    50% {
+      transform: translate(120px, -80px) rotate(160deg);
+    }
+    75% {
+      transform: translate(-60px, 100px) rotate(240deg);
+    }
+  }
+
+  @keyframes float-5 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+      transform: translate(80px, 120px) rotate(-60deg);
+    }
+    40% {
+      transform: translate(-100px, 60px) rotate(-120deg);
+    }
+    60% {
+      transform: translate(120px, -100px) rotate(-180deg);
+    }
+    80% {
+      transform: translate(-80px, -60px) rotate(-240deg);
+    }
+  }
+
+  @keyframes float-6 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    30% {
+      transform: translate(-100px, 100px) rotate(100deg);
+    }
+    60% {
+      transform: translate(100px, -120px) rotate(200deg);
+    }
+  }
 }
