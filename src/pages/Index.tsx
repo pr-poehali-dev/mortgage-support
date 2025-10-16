@@ -671,25 +671,7 @@ const Index = () => {
               </Button>
             </div>
 
-            <div className="inline-flex items-center gap-8 bg-card p-6 rounded-lg shadow-sm mt-8">
-              <div>
-                <div className="text-4xl font-bold text-primary">4.9</div>
-                <div className="text-sm opacity-70">Средний рейтинг</div>
-                <div className="flex gap-1 text-yellow-500 text-lg mt-1">
-                  {'⭐'.repeat(5)}
-                </div>
-              </div>
-              <div className="h-16 w-px bg-border"></div>
-              <div>
-                <div className="text-4xl font-bold text-accent">1247</div>
-                <div className="text-sm opacity-70">Довольных клиентов</div>
-              </div>
-              <div className="h-16 w-px bg-border"></div>
-              <div>
-                <div className="text-4xl font-bold text-primary">94%</div>
-                <div className="text-sm opacity-70">Одобрение ипотеки</div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
