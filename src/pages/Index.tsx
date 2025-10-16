@@ -111,9 +111,9 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://v3b.fal.media/files/b/kangaroo/_kkHDrB6FTgRQuwrJJ_md_output.png" 
-                alt="Счастливая семья с ключами от квартиры" 
-                className="rounded-2xl shadow-2xl w-full hover-scale"
+                src="https://cdn.poehali.dev/files/2b431a4c-be1e-42c3-bd8e-bc644ad1fd78.jpg" 
+                alt="Ипотечный брокер" 
+                className="rounded-2xl shadow-2xl w-full hover-scale object-cover"
               />
             </div>
           </div>
