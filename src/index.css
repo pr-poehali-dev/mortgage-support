@@ -135,4 +135,18 @@
   .hover-scale:hover {
     transform: scale(1.02);
   }
+
+  .blink-gradient {
+    animation: blink-colors 1.5s ease-in-out infinite;
+  }
+
+  @keyframes blink-colors {
+    0%,
+    100% {
+      color: #3b82f6;
+    }
+    50% {
+      color: #ec4899;
+    }
+  }
 }

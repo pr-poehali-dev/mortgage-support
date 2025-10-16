@@ -165,10 +165,10 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 mt-8">
             <Card className="border-destructive/50">
               <CardHeader>
-                <CardTitle className="text-destructive">Аренда 5 лет</CardTitle>
+                <CardTitle className="text-purple-600">Аренда 5 лет</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold mb-4 text-destructive">2 100 000 ₽</div>
+                <div className="text-4xl font-bold mb-4 blink-gradient">2 100 000 ₽</div>
                 <p className="text-sm text-muted-foreground">И останетесь ни с чем</p>
                 <ul className="mt-4 space-y-2 text-sm">
                   <li className="flex items-center gap-2">
