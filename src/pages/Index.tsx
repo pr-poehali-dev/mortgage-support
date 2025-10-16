@@ -693,7 +693,7 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 space-y-6">
             <div className="inline-flex items-center gap-8 bg-card p-6 rounded-lg shadow-sm">
               <div>
                 <div className="text-4xl font-bold text-primary">4.9</div>
@@ -713,6 +713,17 @@ const Index = () => {
                 <div className="text-sm opacity-70">Одобрение ипотеки</div>
               </div>
             </div>
+
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="gap-2 hover:bg-primary hover:text-white transition-all"
+              onClick={() => window.open('https://www.vl.ru/mango-dom', '_blank')}
+            >
+              <Icon name="MessageSquare" size={20} />
+              Читать все отзывы на VL.ru
+              <Icon name="ExternalLink" size={16} />
+            </Button>
           </div>
         </div>
       </section>
