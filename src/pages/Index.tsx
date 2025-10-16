@@ -63,9 +63,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Home" className="text-primary" size={28} />
-            <span className="font-bold text-xl text-primary">ВашаИпотека</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/files/a4a9e5b6-b1a0-494c-ad84-e97aa91e5da1.png" 
+              alt="МангоДом" 
+              className="h-12 w-auto"
+            />
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#mortgage-programs" className="text-sm hover:text-primary transition-colors">Программы</a>
@@ -538,8 +541,11 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Home" className="text-accent" size={28} />
-                <span className="font-bold text-xl">ВашаИпотека</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/a4a9e5b6-b1a0-494c-ad84-e97aa91e5da1.png" 
+                  alt="МангоДом" 
+                  className="h-10 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-sm opacity-80">Ваш надёжный партнёр в получении ипотеки</p>
             </div>
