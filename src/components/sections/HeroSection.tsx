@@ -20,7 +20,7 @@ const HeroSection = ({ onTelegramClick }: HeroSectionProps) => {
             <Button size="lg" onClick={onTelegramClick} className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover-gradient-shift">
               Получить консультацию
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 hover:bg-primary hover:text-white">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border bg-muted/50 hover:bg-muted hover:border-primary transition-all">
               <Icon name="Calculator" className="mr-2" size={20} />
               Рассчитать ипотеку
             </Button>
