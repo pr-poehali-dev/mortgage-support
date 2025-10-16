@@ -35,11 +35,6 @@ const Footer = () => {
             <p className="text-sm opacity-80">Пн-Пт: 9:00-20:00</p>
             <p className="text-sm opacity-80">Сб-Вс: 10:00-18:00</p>
           </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Адрес</h4>
-            <p className="text-sm opacity-80">Владивосток, ул. Центральная, 10</p>
-          </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
