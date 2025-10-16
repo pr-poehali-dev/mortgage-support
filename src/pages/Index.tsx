@@ -582,11 +582,23 @@ const Index = () => {
               <p className="text-xs mt-1">ОГРН 1234567890123 | Лицензия №1234567890</p>
             </div>
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-accent transition-colors">
-                <Icon name="MessageCircle" size={20} />
+              <a 
+                href="https://wa.me/79991234567" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="WhatsApp"
+              >
+                <Icon name="MessageCircle" size={22} className="text-white" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
-                <Icon name="Send" size={20} />
+              <a 
+                href="https://t.me/Nastasssl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-[#0088cc] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="Telegram"
+              >
+                <Icon name="Send" size={20} className="text-white" />
               </a>
             </div>
           </div>
