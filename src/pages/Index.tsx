@@ -559,142 +559,34 @@ const Index = () => {
             <p className="text-lg opacity-70">Более 1200 семей уже получили ипотеку с нашей помощью</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    АП
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Анна П.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Обратилась в МангоДом после отказа в двух банках. Ребята помогли правильно оформить документы и нашли программу с одобрением! Квартира уже наша, спасибо огромное!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, январь 2025</p>
-              </CardContent>
-            </Card>
+          <div className="text-center space-y-6">
+            <p className="text-lg opacity-80">Читайте настоящие отзывы наших клиентов на популярных платформах:</p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="gap-2 hover:bg-primary hover:text-white transition-all w-full sm:w-auto"
+                onClick={() => window.open('https://go.2gis.com/bq5Fb', '_blank')}
+              >
+                <Icon name="MapPin" size={20} />
+                Отзывы на 2ГИС
+                <Icon name="ExternalLink" size={16} />
+              </Button>
 
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    ДК
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Дмитрий К.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Профессионалы своего дела! Рефинансировали ипотеку, снизили ставку с 11% до 6,5%. Экономия ощутимая. Всё прошло быстро и без нервов. Рекомендую!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, декабрь 2024</p>
-              </CardContent>
-            </Card>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="gap-2 hover:bg-primary hover:text-white transition-all w-full sm:w-auto"
+                onClick={() => window.open('https://www.vl.ru/mango-dom', '_blank')}
+              >
+                <Icon name="MessageSquare" size={20} />
+                Отзывы на VL.ru
+                <Icon name="ExternalLink" size={16} />
+              </Button>
+            </div>
 
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    ЕС
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Елена С.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Получили семейную ипотеку 2% благодаря МангоДом! Специалисты очень внимательные, всё объясняли, помогали с каждым шагом. Теперь живём в просторной трёшке!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, февраль 2025</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    МВ
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Максим В.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Отличное агентство! Оформили дальневосточную ипотеку под 2%. Все документы подготовили за меня, я только подписывал. Очень доволен сервисом и результатом!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, ноябрь 2024</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    ОЛ
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Ольга Л.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Долго искала агентство, которому можно доверять. МангоДом - это команда профессионалов! Помогли с ипотекой для врачей, ставка отличная, сопровождение на высоте!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, январь 2025</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    ИР
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Игорь Р.</h4>
-                    <div className="flex gap-1 text-yellow-500">
-                      {'⭐'.repeat(5)}
-                    </div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm opacity-80 mb-3">
-                  "Сначала сомневался, но решил обратиться. Не пожалел! Ребята настоящие эксперты, знают все тонкости ипотеки. Получили одобрение в 3 банках, выбрали лучшее!"
-                </p>
-                <p className="text-xs opacity-60">Владивосток, декабрь 2024</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12 space-y-6">
-            <div className="inline-flex items-center gap-8 bg-card p-6 rounded-lg shadow-sm">
+            <div className="inline-flex items-center gap-8 bg-card p-6 rounded-lg shadow-sm mt-8">
               <div>
                 <div className="text-4xl font-bold text-primary">4.9</div>
                 <div className="text-sm opacity-70">Средний рейтинг</div>
@@ -713,17 +605,6 @@ const Index = () => {
                 <div className="text-sm opacity-70">Одобрение ипотеки</div>
               </div>
             </div>
-
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="gap-2 hover:bg-primary hover:text-white transition-all"
-              onClick={() => window.open('https://www.vl.ru/mango-dom', '_blank')}
-            >
-              <Icon name="MessageSquare" size={20} />
-              Читать все отзывы на VL.ru
-              <Icon name="ExternalLink" size={16} />
-            </Button>
           </div>
         </div>
       </section>
