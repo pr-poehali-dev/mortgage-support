@@ -151,7 +151,7 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
             </DialogTitle>
             <DialogDescription className="text-left pt-4 space-y-3">
               <p>
-                Нажимая кнопку "Подтверждаю", вы даёте согласие ИП Молоровой А.А. (ИНН 250811103854) 
+                Нажимая кнопку "Подтверждаю", вы даёте согласие ИП Молоровой А.А. (ИНН 250811103854, ОГРНИП 322253600056907) 
                 на обработку ваших персональных данных:
               </p>
               <ul className="list-disc list-inside space-y-2 text-sm">
