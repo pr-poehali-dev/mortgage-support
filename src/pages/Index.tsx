@@ -564,10 +564,10 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    ЕМ
+                    АП
                   </div>
                   <div>
-                    <h4 className="font-semibold">Елена Морозова</h4>
+                    <h4 className="font-semibold">Анна П.</h4>
                     <div className="flex gap-1 text-yellow-500">
                       {'⭐'.repeat(5)}
                     </div>
@@ -576,9 +576,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm opacity-80 mb-3">
-                  "Спасибо огромное команде МангоДом! Помогли получить семейную ипотеку под 2%. Банки отказывали, но специалисты нашли идеальный вариант. Теперь мы в своей квартире!"
+                  "Обратилась в МангоДом после отказа в двух банках. Ребята помогли правильно оформить документы и нашли программу с одобрением! Квартира уже наша, спасибо огромное!"
                 </p>
-                <p className="text-xs opacity-60">Семейная ипотека, январь 2025</p>
+                <p className="text-xs opacity-60">Владивосток, январь 2025</p>
               </CardContent>
             </Card>
 
@@ -586,10 +586,10 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    АК
+                    ДК
                   </div>
                   <div>
-                    <h4 className="font-semibold">Андрей Ковалёв</h4>
+                    <h4 className="font-semibold">Дмитрий К.</h4>
                     <div className="flex gap-1 text-yellow-500">
                       {'⭐'.repeat(5)}
                     </div>
@@ -598,9 +598,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm opacity-80 mb-3">
-                  "Рефинансировал ипотеку с 12% до 6%. Экономия составила 3 млн рублей за весь срок кредита! Ребята всё оформили за неделю, я только документы подписывал."
+                  "Профессионалы своего дела! Рефинансировали ипотеку, снизили ставку с 11% до 6,5%. Экономия ощутимая. Всё прошло быстро и без нервов. Рекомендую!"
                 </p>
-                <p className="text-xs opacity-60">Рефинансирование, декабрь 2024</p>
+                <p className="text-xs opacity-60">Владивосток, декабрь 2024</p>
               </CardContent>
             </Card>
 
@@ -608,10 +608,10 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
-                    МС
+                    ЕС
                   </div>
                   <div>
-                    <h4 className="font-semibold">Мария Соколова</h4>
+                    <h4 className="font-semibold">Елена С.</h4>
                     <div className="flex gap-1 text-yellow-500">
                       {'⭐'.repeat(5)}
                     </div>
@@ -620,9 +620,75 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm opacity-80 mb-3">
-                  "Дальневосточная ипотека — просто находка! Не знала, что могу получить 2%, думала это только реклама. МангоДом всё объяснили и помогли оформить. Очень довольна!"
+                  "Получили семейную ипотеку 2% благодаря МангоДом! Специалисты очень внимательные, всё объясняли, помогали с каждым шагом. Теперь живём в просторной трёшке!"
                 </p>
-                <p className="text-xs opacity-60">Дальневосточная ипотека, февраль 2025</p>
+                <p className="text-xs opacity-60">Владивосток, февраль 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    МВ
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Максим В.</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Отличное агентство! Оформили дальневосточную ипотеку под 2%. Все документы подготовили за меня, я только подписывал. Очень доволен сервисом и результатом!"
+                </p>
+                <p className="text-xs opacity-60">Владивосток, ноябрь 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    ОЛ
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Ольга Л.</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Долго искала агентство, которому можно доверять. МангоДом - это команда профессионалов! Помогли с ипотекой для врачей, ставка отличная, сопровождение на высоте!"
+                </p>
+                <p className="text-xs opacity-60">Владивосток, январь 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    ИР
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Игорь Р.</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Сначала сомневался, но решил обратиться. Не пожалел! Ребята настоящие эксперты, знают все тонкости ипотеки. Получили одобрение в 3 банках, выбрали лучшее!"
+                </p>
+                <p className="text-xs opacity-60">Владивосток, декабрь 2024</p>
               </CardContent>
             </Card>
           </div>
