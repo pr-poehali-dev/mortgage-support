@@ -371,45 +371,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Отзывы клиентов
-          </h2>
-          <p className="text-center text-muted-foreground mb-12">2 400+ довольных семей</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                author: 'Молодая семья',
-                text: 'Думали, ипотека нам не светит. Одобрение под 6% за 2 дня! Теперь у детей своя комната.',
-                rating: 5
-              },
-              {
-                author: 'Врач-терапевт, 29 лет',
-                text: 'Ребята подобрали идеальные условия, ставку 2%, оформили документы. Переплата в 3 раза меньше.',
-                rating: 5
-              },
-              {
-                author: 'Участник СВО, 34 года',
-                text: 'Брокер разобрался со всеми справками за неделю. Одобрили 5 млн под 2%.',
-                rating: 5
-              }
-            ].map((review, i) => (
-              <Card key={i}>
-                <CardContent className="pt-6">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(review.rating)].map((_, j) => (
-                      <Icon key={j} name="Star" className="text-yellow-500 fill-yellow-500" size={18} />
-                    ))}
-                  </div>
-                  <p className="text-sm mb-4 italic">"{review.text}"</p>
-                  <p className="text-sm font-semibold text-primary">— {review.author}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section id="calculator" className="py-16 px-4 bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-50">
         <div className="container mx-auto max-w-4xl">
