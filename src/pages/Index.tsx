@@ -551,6 +551,106 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 bg-muted/30 relative z-10">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Отзывы наших клиентов</h2>
+            <p className="text-lg opacity-70">Более 1200 семей уже получили ипотеку с нашей помощью</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    ЕМ
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Елена Морозова</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Спасибо огромное команде МангоДом! Помогли получить семейную ипотеку под 2%. Банки отказывали, но специалисты нашли идеальный вариант. Теперь мы в своей квартире!"
+                </p>
+                <p className="text-xs opacity-60">Семейная ипотека, январь 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    АК
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Андрей Ковалёв</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Рефинансировал ипотеку с 12% до 6%. Экономия составила 3 млн рублей за весь срок кредита! Ребята всё оформили за неделю, я только документы подписывал."
+                </p>
+                <p className="text-xs opacity-60">Рефинансирование, декабрь 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-semibold text-lg">
+                    МС
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Мария Соколова</h4>
+                    <div className="flex gap-1 text-yellow-500">
+                      {'⭐'.repeat(5)}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm opacity-80 mb-3">
+                  "Дальневосточная ипотека — просто находка! Не знала, что могу получить 2%, думала это только реклама. МангоДом всё объяснили и помогли оформить. Очень довольна!"
+                </p>
+                <p className="text-xs opacity-60">Дальневосточная ипотека, февраль 2025</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center gap-8 bg-card p-6 rounded-lg shadow-sm">
+              <div>
+                <div className="text-4xl font-bold text-primary">4.9</div>
+                <div className="text-sm opacity-70">Средний рейтинг</div>
+                <div className="flex gap-1 text-yellow-500 text-lg mt-1">
+                  {'⭐'.repeat(5)}
+                </div>
+              </div>
+              <div className="h-16 w-px bg-border"></div>
+              <div>
+                <div className="text-4xl font-bold text-accent">1247</div>
+                <div className="text-sm opacity-70">Довольных клиентов</div>
+              </div>
+              <div className="h-16 w-px bg-border"></div>
+              <div>
+                <div className="text-4xl font-bold text-primary">94%</div>
+                <div className="text-sm opacity-70">Одобрение ипотеки</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-foreground text-background py-12 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
