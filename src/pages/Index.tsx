@@ -5,6 +5,7 @@ import Header from '@/components/sections/Header';
 import HeroSection from '@/components/sections/HeroSection';
 import MortgageProgramsSection from '@/components/sections/MortgageProgramsSection';
 import HowItWorksSection from '@/components/sections/HowItWorksSection';
+import AdvantagesSection from '@/components/sections/AdvantagesSection';
 import ReviewsSection from '@/components/sections/ReviewsSection';
 import CalculatorSection from '@/components/sections/CalculatorSection';
 import ApplicationFormSection from '@/components/sections/ApplicationFormSection';
@@ -106,6 +107,7 @@ const Index = () => {
       <div className="relative z-10">
         <Header onTelegramClick={openTelegram} />
         <HeroSection onTelegramClick={openTelegram} />
+        <AdvantagesSection />
         <MortgageProgramsSection />
         <HowItWorksSection />
         <ReviewsSection reviews={reviews} />
