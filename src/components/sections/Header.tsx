@@ -11,7 +11,7 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="https://cdn.poehali.dev/files/a4a9e5b6-b1a0-494c-ad84-e97aa91e5da1.png" 
+            src="https://cdn.poehali.dev/files/b4a79d20-e6f8-4df8-b9c3-6e18e559f10f.png" 
             alt="МангоДом" 
             className="h-12 w-auto"
           />
