@@ -75,7 +75,7 @@ const Index = () => {
             <a href="#how-it-works" className="text-sm hover:text-primary transition-colors">Как работаем</a>
             <a href="#reviews" className="text-sm hover:text-primary transition-colors">Отзывы</a>
             <a href="#calculator" className="text-sm hover:text-primary transition-colors">Калькулятор</a>
-            <Button onClick={openTelegram} size="sm">Оставить заявку</Button>
+            <Button onClick={openTelegram} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift">Оставить заявку</Button>
           </div>
         </div>
       </nav>
@@ -108,7 +108,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <Button onClick={openTelegram} size="lg" className="w-full md:w-auto bg-gradient-to-r from-primary to-accent hover:from-orange-600 hover:to-yellow-500">
+              <Button onClick={openTelegram} size="lg" className="w-full md:w-auto bg-gradient-to-r from-primary to-accent hover-gradient-shift transition-all">
                 Получить одобрение за 24 часа
               </Button>
             </div>
@@ -516,7 +516,7 @@ const Index = () => {
                   </Label>
                 </div>
 
-                <Button type="button" onClick={openTelegram} size="lg" className="w-full bg-gradient-to-r from-primary to-accent hover:from-orange-600 hover:to-yellow-500">
+                <Button type="button" onClick={openTelegram} size="lg" className="w-full bg-gradient-to-r from-primary to-accent hover-gradient-shift transition-all">
                   Получить консультацию бесплатно
                 </Button>
 
