@@ -32,15 +32,16 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-4">Режим работы</h4>
-            <p className="text-sm opacity-80">Пн-Пт: 9:00-20:00</p>
-            <p className="text-sm opacity-80">Сб-Вс: 10:00-18:00</p>
+            <p className="text-sm opacity-80">Пн-Пт: 10:00-20:00</p>
+            <p className="text-sm opacity-80">Сб: 10:00-18:00</p>
+            <p className="text-sm opacity-80">Вс: 12:00-15:00</p>
           </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm opacity-80">
-            <p>© 2025 ООО "Ваша Ипотека". Все права защищены.</p>
-            <p className="text-xs mt-1">ОГРН 1234567890123 | Лицензия №1234567890</p>
+            <p>© 2025 ИП Молорова А.М. Все права защищены.</p>
+            <p className="text-xs mt-1">ИНН 250811103854</p>
           </div>
           <div className="flex items-center gap-4">
             <a 
