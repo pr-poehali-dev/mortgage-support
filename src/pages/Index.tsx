@@ -80,11 +80,11 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="pt-24 pb-16 px-4 relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="pt-24 pb-16 px-4 relative overflow-hidden bg-gradient-to-br from-orange-100 via-yellow-50 to-orange-50">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="inline-block bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 Одобрение в 96% случаев — даже после отказа банков
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -108,7 +108,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <Button onClick={openTelegram} size="lg" className="w-full md:w-auto">
+              <Button onClick={openTelegram} size="lg" className="w-full md:w-auto bg-gradient-to-r from-primary to-accent hover:from-orange-600 hover:to-yellow-500">
                 Получить одобрение за 24 часа
               </Button>
             </div>
@@ -160,7 +160,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-br from-accent/5 to-background">
+      <section className="py-16 px-4 bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Сколько вы теряете, откладывая решение ипотечного вопроса
@@ -276,7 +276,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="how-it-works" className="py-16 px-4 bg-gradient-to-br from-primary/5 to-background">
+      <section id="how-it-works" className="py-16 px-4 bg-gradient-to-br from-yellow-50 via-orange-50 to-yellow-100">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Как мы работаем
@@ -291,7 +291,7 @@ const Index = () => {
               { icon: 'Key', title: 'Сделка', desc: 'Оформляем сделку и передаём ключи' }
             ].map((step, i) => (
               <div key={i} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-accent text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                   {i + 1}
                 </div>
                 <div className="flex-1">
@@ -347,7 +347,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="calculator" className="py-16 px-4 bg-gradient-to-br from-accent/5 to-background">
+      <section id="calculator" className="py-16 px-4 bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Калькулятор ипотеки
@@ -468,11 +468,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact-form" className="py-16 px-4 bg-gradient-to-br from-primary/10 via-accent/5 to-background">
+      <section id="contact-form" className="py-16 px-4 bg-gradient-to-br from-orange-100 via-yellow-100 to-orange-50">
         <div className="container mx-auto max-w-2xl">
           <Card className="shadow-xl">
             <CardHeader className="text-center">
-              <div className="inline-block bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 mx-auto">
+              <div className="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 mx-auto shadow-md">
                 Акция до конца месяца!
               </div>
               <CardTitle className="text-3xl mb-2">
@@ -516,7 +516,7 @@ const Index = () => {
                   </Label>
                 </div>
 
-                <Button type="button" onClick={openTelegram} size="lg" className="w-full">
+                <Button type="button" onClick={openTelegram} size="lg" className="w-full bg-gradient-to-r from-primary to-accent hover:from-orange-600 hover:to-yellow-500">
                   Получить консультацию бесплатно
                 </Button>
 
