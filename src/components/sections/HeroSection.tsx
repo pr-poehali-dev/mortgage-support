@@ -31,7 +31,7 @@ const HeroSection = ({ onTelegramClick }: HeroSectionProps) => {
               <div className="text-sm text-muted-foreground">Минимальная ставка</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent">30 лет</div>
+              <div className="text-4xl font-bold text-accent">20 лет</div>
               <div className="text-sm text-muted-foreground">Срок кредита</div>
             </div>
             <div className="text-center">
