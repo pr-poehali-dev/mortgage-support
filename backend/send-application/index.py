@@ -67,8 +67,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     data = urllib.parse.urlencode({
         'chat_id': chat_id,
-        'text': message,
-        'parse_mode': 'HTML'
+        'text': message
     }).encode()
     
     req = urllib.request.Request(url, data=data, method='POST')
