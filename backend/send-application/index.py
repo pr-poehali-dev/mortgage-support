@@ -9,7 +9,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     Business: Send mortgage application to Telegram bot
     Args: event with httpMethod, body (name, phone); context with request_id
     Returns: HTTP response with success/error status
-    Version: 1.2 with secrets configured
+    Version: 1.3 with correct bot token
     '''
     method: str = event.get('httpMethod', 'GET')
     
