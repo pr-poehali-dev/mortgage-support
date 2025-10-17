@@ -83,12 +83,7 @@ const Index = () => {
 
   const result = calculateMortgage();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
-    
+  const handleSubmit = async (name: string, phone: string) => {
     console.log('Отправка заявки:', { name, phone });
     
     try {
@@ -109,7 +104,6 @@ const Index = () => {
           title: "Заявка отправлена!",
           description: `Спасибо, ${name}! Мы свяжемся с вами в течение 30 минут.`,
         });
-        (e.target as HTMLFormElement).reset();
       } else {
         toast({
           title: "Ошибка",

@@ -16,13 +16,14 @@ import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 
 interface ApplicationFormSectionProps {
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  onSubmit: (name: string, phone: string) => void;
 }
 
 const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
   const [showConsentDialog, setShowConsentDialog] = useState(false);
-  const [formData, setFormData] = useState<FormData | null>(null);
-  const [pendingEvent, setPendingEvent] = useState<React.FormEvent<HTMLFormElement> | null>(null);
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [formElement, setFormElement] = useState<HTMLFormElement | null>(null);
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,24 +34,28 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
       return;
     }
 
-    setFormData(data);
-    setPendingEvent(e);
+    setName(data.get('name') as string);
+    setPhone(data.get('phone') as string);
+    setFormElement(e.currentTarget);
     setShowConsentDialog(true);
   };
 
   const handleConfirmConsent = () => {
-    if (pendingEvent) {
-      setShowConsentDialog(false);
-      onSubmit(pendingEvent);
-      setFormData(null);
-      setPendingEvent(null);
+    setShowConsentDialog(false);
+    onSubmit(name, phone);
+    if (formElement) {
+      formElement.reset();
     }
+    setName('');
+    setPhone('');
+    setFormElement(null);
   };
 
   const handleCancelConsent = () => {
     setShowConsentDialog(false);
-    setFormData(null);
-    setPendingEvent(null);
+    setName('');
+    setPhone('');
+    setFormElement(null);
   };
 
   return (
@@ -155,8 +160,8 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
                 на обработку ваших персональных данных:
               </p>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Имя: <strong>{formData?.get('name')}</strong></li>
-                <li>Телефон: <strong>{formData?.get('phone')}</strong></li>
+                <li>Имя: <strong>{name}</strong></li>
+                <li>Телефон: <strong>{phone}</strong></li>
               </ul>
               <p className="text-sm">
                 Ваши данные будут использованы исключительно для связи с вами по вопросам ипотечного 
