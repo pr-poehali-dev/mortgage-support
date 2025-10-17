@@ -73,7 +73,7 @@ const MortgageProgramsSection = () => {
                 <Icon name="GraduationCap" className="text-accent" size={24} />
               </div>
               <CardTitle>Для врачей и педагогов</CardTitle>
-              <CardDescription>От 2% годовых</CardDescription>
+              <CardDescription>До 2% годовых</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -83,7 +83,7 @@ const MortgageProgramsSection = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="Check" className="text-accent shrink-0 mt-0.5" size={16} />
-                  <span>До 6 млн рублей</span>
+                  <span>До 9 млн рублей</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="Check" className="text-accent shrink-0 mt-0.5" size={16} />
