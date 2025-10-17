@@ -84,8 +84,6 @@ const Index = () => {
   const result = calculateMortgage();
 
   const handleSubmit = async (name: string, phone: string) => {
-    console.log('Отправка заявки:', { name, phone });
-    
     try {
       const response = await fetch('https://functions.poehali.dev/ea5f6b22-33d4-4e01-9d42-d558eef5c089', {
         method: 'POST',
@@ -95,9 +93,7 @@ const Index = () => {
         body: JSON.stringify({ name, phone }),
       });
 
-      console.log('Ответ сервера:', response.status, response.statusText);
       const responseData = await response.json();
-      console.log('Данные ответа:', responseData);
 
       if (response.ok) {
         toast({
@@ -112,7 +108,6 @@ const Index = () => {
         });
       }
     } catch (error) {
-      console.error('Ошибка при отправке:', error);
       toast({
         title: "Ошибка",
         description: "Не удалось отправить заявку. Проверьте подключение к интернету.",
