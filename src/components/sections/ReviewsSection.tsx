@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import AnimatedSection from '@/components/AnimatedSection';
 
 interface Review {
   id: string;
@@ -34,16 +35,19 @@ const ReviewsSection = ({ reviews }: ReviewsSectionProps) => {
   return (
     <section id="reviews" className="py-20 px-4 bg-gradient-to-br from-orange-50/30 to-background">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Отзывы наших клиентов
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Реальные истории людей, которым мы помогли получить ипотеку
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Отзывы наших клиентов
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Реальные истории людей, которым мы помогли получить ипотеку
+            </p>
+          </div>
+        </AnimatedSection>
 
-        <div className="max-w-4xl mx-auto">
+        <AnimatedSection delay={0.2}>
+          <div className="max-w-4xl mx-auto">
           <Card className="shadow-2xl border-2 hover:border-primary transition-all">
             <CardContent className="p-8">
               <div className="flex items-start gap-4 mb-4">
@@ -142,6 +146,7 @@ const ReviewsSection = ({ reviews }: ReviewsSectionProps) => {
             </div>
           </div>
         </div>
+        </AnimatedSection>
       </div>
     </section>
   );

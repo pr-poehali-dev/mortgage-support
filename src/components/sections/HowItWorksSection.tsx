@@ -1,18 +1,21 @@
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-20 px-4">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Как мы работаем
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Простой и понятный процесс получения ипотеки
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Как мы работаем
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Простой и понятный процесс получения ипотеки
+            </p>
+          </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <Card className="relative group hover:shadow-xl transition-all">

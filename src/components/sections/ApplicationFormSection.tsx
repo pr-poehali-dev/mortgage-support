@@ -60,7 +60,7 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
 
   return (
     <>
-      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
+      <section id="application-form" className="py-20 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <Card className="shadow-2xl border-2">

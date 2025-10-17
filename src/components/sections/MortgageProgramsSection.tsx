@@ -1,21 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const MortgageProgramsSection = () => {
   return (
     <section id="mortgage-programs" className="py-20 px-4 bg-gradient-to-br from-background to-orange-50/30">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Программы ипотечного кредитования
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Подберём оптимальную программу с минимальной процентной ставкой специально для вас
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Программы ипотечного кредитования
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Подберём оптимальную программу с минимальной процентной ставкой специально для вас
+            </p>
+          </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
+          <AnimatedSection delay={0.1}>
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                 <Icon name="MapPin" className="text-accent" size={24} />
@@ -40,8 +44,10 @@ const MortgageProgramsSection = () => {
               </ul>
             </CardContent>
           </Card>
+          </AnimatedSection>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
+          <AnimatedSection delay={0.2}>
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                 <Icon name="GraduationCap" className="text-accent" size={24} />
@@ -92,8 +98,10 @@ const MortgageProgramsSection = () => {
               </ul>
             </CardContent>
           </Card>
+          </AnimatedSection>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary">
+          <AnimatedSection delay={0.4}>
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Icon name="TreePine" className="text-primary" size={24} />
@@ -118,6 +126,7 @@ const MortgageProgramsSection = () => {
               </ul>
             </CardContent>
           </Card>
+          </AnimatedSection>
         </div>
       </div>
     </section>

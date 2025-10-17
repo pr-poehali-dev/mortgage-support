@@ -4,6 +4,7 @@ import { Slider } from '@/components/ui/slider';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import AnimatedSection from '@/components/AnimatedSection';
 
 interface CalculatorSectionProps {
   propertyPrice: number;
@@ -44,14 +45,16 @@ const CalculatorSection = ({
   return (
     <section id="calculator" className="py-20 px-4">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Калькулятор ипотеки
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Рассчитайте примерный ежемесячный платёж
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Калькулятор ипотеки
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Рассчитайте примерный ежемесячный платёж
+            </p>
+          </div>
+        </AnimatedSection>
 
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8">
           <Card className="shadow-xl">
@@ -193,9 +196,14 @@ const CalculatorSection = ({
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6"
-                onClick={onTelegramClick}
+                onClick={() => {
+                  const formSection = document.getElementById('application-form');
+                  if (formSection) {
+                    formSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+                }}
               >
-                Получить одобрение
+                Подобрать программу
                 <Icon name="ArrowRight" className="ml-2" size={20} />
               </Button>
             </CardContent>
