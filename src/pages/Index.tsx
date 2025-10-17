@@ -130,7 +130,6 @@ const Index = () => {
         <AdvantagesSection />
         <MortgageProgramsSection />
         <HowItWorksSection />
-        <ReviewsSection reviews={reviews} />
         <CalculatorSection
           propertyPrice={propertyPrice}
           downPayment={downPayment}
@@ -143,6 +142,7 @@ const Index = () => {
           onMortgageProgramChange={setMortgageProgram}
           onTelegramClick={openTelegram}
         />
+        <ReviewsSection reviews={reviews} />
         <FAQSection />
         <Footer />
       </div>
