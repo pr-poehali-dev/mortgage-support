@@ -55,7 +55,7 @@ const HowItWorksSection = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Подача в банк</h3>
               <p className="text-muted-foreground">
-                Отправляем заявку в несколько банков для максимальных шансов одобрения
+                Отправляем заявку в банк максимально подходящий вам
               </p>
             </CardContent>
           </Card>
