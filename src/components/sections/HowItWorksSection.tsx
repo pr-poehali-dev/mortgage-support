@@ -66,11 +66,11 @@ const HowItWorksSection = () => {
             </div>
             <CardContent className="pt-8">
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Icon name="Key" className="text-accent" size={32} />
+                <Icon name="FileCheck" className="text-accent" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Получение ключей</h3>
+              <h3 className="text-xl font-semibold mb-2">Подписание документации</h3>
               <p className="text-muted-foreground">
-                Сопровождаем сделку до получения ключей от вашего нового жилья
+                Сопровождение сделки в банке, у застройщика, в МФЦ
               </p>
             </CardContent>
           </Card>
