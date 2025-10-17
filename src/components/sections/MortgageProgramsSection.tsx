@@ -21,7 +21,7 @@ const MortgageProgramsSection = () => {
                 <Icon name="Home" className="text-primary" size={24} />
               </div>
               <CardTitle>Семейная ипотека</CardTitle>
-              <CardDescription>От 6% годовых</CardDescription>
+              <CardDescription>6% годовых</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -35,7 +35,7 @@ const MortgageProgramsSection = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="Check" className="text-primary shrink-0 mt-0.5" size={16} />
-                  <span>Первоначальный взнос от 15%</span>
+                  <span>Первоначальный взнос от 20,1%</span>
                 </li>
               </ul>
             </CardContent>
