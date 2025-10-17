@@ -126,6 +126,7 @@ const Index = () => {
       <div className="relative z-10">
         <Header onTelegramClick={openTelegram} />
         <HeroSection onTelegramClick={openTelegram} />
+        <ApplicationFormSection onSubmit={handleSubmit} />
         <AdvantagesSection />
         <MortgageProgramsSection />
         <HowItWorksSection />
@@ -142,7 +143,6 @@ const Index = () => {
           onMortgageProgramChange={setMortgageProgram}
           onTelegramClick={openTelegram}
         />
-        <ApplicationFormSection onSubmit={handleSubmit} />
         <FAQSection />
         <Footer />
       </div>
