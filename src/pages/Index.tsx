@@ -16,6 +16,7 @@ import PromoPopup from '@/components/PromoPopup';
 import ScrollToTop from '@/components/ScrollToTop';
 import QuizSection from '@/components/QuizSection';
 import SavingsCalculator from '@/components/sections/SavingsCalculator';
+import BudgetCalculatorSection from '@/components/sections/BudgetCalculatorSection';
 
 const Index = () => {
   const { toast } = useToast();
@@ -131,6 +132,7 @@ const Index = () => {
         <Header onTelegramClick={openTelegram} />
         <HeroSection onTelegramClick={openTelegram} />
         <ApplicationFormSection onSubmit={handleSubmit} />
+        <BudgetCalculatorSection />
         <AdvantagesSection />
         <MortgageProgramsSection />
         <HowItWorksSection />
