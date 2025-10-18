@@ -17,9 +17,9 @@ const MortgageProgramsSection = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <AnimatedSection delay={0.1}>
-            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent h-full">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                 <Icon name="MapPin" className="text-accent" size={24} />
@@ -47,7 +47,7 @@ const MortgageProgramsSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent">
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-accent h-full">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                 <Icon name="GraduationCap" className="text-accent" size={24} />
@@ -72,8 +72,10 @@ const MortgageProgramsSection = () => {
               </ul>
             </CardContent>
           </Card>
+          </AnimatedSection>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary">
+          <AnimatedSection delay={0.3}>
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary h-full">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Icon name="Home" className="text-primary" size={24} />
@@ -101,7 +103,7 @@ const MortgageProgramsSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.4}>
-            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary">
+            <Card className="hover:shadow-xl transition-all hover:-translate-y-2 border-2 hover:border-primary h-full">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Icon name="TreePine" className="text-primary" size={24} />
