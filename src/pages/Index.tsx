@@ -12,6 +12,10 @@ import ApplicationFormSection from '@/components/sections/ApplicationFormSection
 import FAQSection from '@/components/sections/FAQSection';
 import Footer from '@/components/sections/Footer';
 import FloatingButtons from '@/components/sections/FloatingButtons';
+import PromoPopup from '@/components/PromoPopup';
+import ScrollToTop from '@/components/ScrollToTop';
+import QuizSection from '@/components/QuizSection';
+import SavingsCalculator from '@/components/sections/SavingsCalculator';
 
 const Index = () => {
   const { toast } = useToast();
@@ -130,6 +134,7 @@ const Index = () => {
         <AdvantagesSection />
         <MortgageProgramsSection />
         <HowItWorksSection />
+        <QuizSection />
         <CalculatorSection
           propertyPrice={propertyPrice}
           downPayment={downPayment}
@@ -142,11 +147,14 @@ const Index = () => {
           onMortgageProgramChange={setMortgageProgram}
           onTelegramClick={openTelegram}
         />
+        <SavingsCalculator />
         <ReviewsSection reviews={reviews} />
         <FAQSection />
         <Footer />
       </div>
       <FloatingButtons />
+      <PromoPopup />
+      <ScrollToTop />
     </div>
   );
 };

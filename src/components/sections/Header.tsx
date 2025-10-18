@@ -1,14 +1,30 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { useState, useEffect } from 'react';
 
 interface HeaderProps {
   onTelegramClick: () => void;
 }
 
 const Header = ({ onTelegramClick }: HeaderProps) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-b border-border z-50 transition-all duration-300 ${
+      isScrolled ? 'shadow-lg py-2' : 'py-0'
+    }`}>
+      <div className={`container mx-auto px-4 flex items-center justify-between transition-all duration-300 ${
+        isScrolled ? 'py-3' : 'py-4'
+      }`}>
         <div className="flex items-center gap-3">
           <img 
             src="https://cdn.poehali.dev/files/b4a79d20-e6f8-4df8-b9c3-6e18e559f10f.png" 
