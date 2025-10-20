@@ -1,7 +1,15 @@
 import Icon from '@/components/ui/icon';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('application-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <footer className="bg-gradient-to-br from-primary/90 to-accent/90 text-white py-12 px-4">
       <div className="container mx-auto">
@@ -14,7 +22,14 @@ const Footer = () => {
                 className="h-10 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-sm opacity-80">Ваш надёжный партнёр в получении ипотеки</p>
+            <p className="text-sm opacity-80 mb-4">Ваш надёжный партнёр в получении ипотеки</p>
+            <Button
+              onClick={scrollToForm}
+              className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg"
+            >
+              <Icon name="FileText" size={18} className="mr-2" />
+              Оставить заявку
+            </Button>
           </div>
           
           <div>
