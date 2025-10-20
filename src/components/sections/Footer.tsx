@@ -9,6 +9,16 @@ const Footer = () => {
       const yOffset = -80;
       const y = formSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
+      
+      setTimeout(() => {
+        const card = formSection.querySelector('.shadow-2xl');
+        if (card) {
+          card.classList.add('highlight-form');
+          setTimeout(() => {
+            card.classList.remove('highlight-form');
+          }, 2000);
+        }
+      }, 500);
     }
   };
 

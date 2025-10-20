@@ -373,4 +373,20 @@
       transform: scale(1.05);
     }
   }
+
+  .highlight-form {
+    animation: highlight-glow 2s ease-out;
+  }
+
+  @keyframes highlight-glow {
+    0% {
+      box-shadow: 0 0 0 0 hsla(var(--primary), 0.7);
+    }
+    50% {
+      box-shadow: 0 0 40px 20px hsla(var(--primary), 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 0 hsla(var(--primary), 0);
+    }
+  }
 }
