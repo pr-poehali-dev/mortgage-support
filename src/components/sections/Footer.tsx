@@ -6,7 +6,9 @@ const Footer = () => {
   const scrollToForm = () => {
     const formSection = document.getElementById('application-form');
     if (formSection) {
-      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const yOffset = -80;
+      const y = formSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
