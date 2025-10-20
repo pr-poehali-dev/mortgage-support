@@ -18,6 +18,25 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToForm = () => {
+    const formSection = document.getElementById('application-form');
+    if (formSection) {
+      const yOffset = -80;
+      const y = formSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      
+      setTimeout(() => {
+        const card = formSection.querySelector('.shadow-2xl');
+        if (card) {
+          card.classList.add('highlight-form');
+          setTimeout(() => {
+            card.classList.remove('highlight-form');
+          }, 2000);
+        }
+      }, 500);
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-b border-border z-50 transition-all duration-300 ${
       isScrolled ? 'shadow-lg py-2' : 'py-0'
@@ -45,7 +64,7 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
             <Icon name="Send" size={16} />
             Telegram
           </Button>
-          <Button onClick={onTelegramClick} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift pulse-button">Оставить заявку</Button>
+          <Button onClick={scrollToForm} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift pulse-button">Оставить заявку</Button>
         </div>
       </div>
     </nav>
