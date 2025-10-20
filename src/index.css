@@ -331,4 +331,46 @@
       transform: translate(-50%, -48%) scale(0.95);
     }
   }
+
+  .pulse-button {
+    position: relative;
+    animation: pulse-scale 2s ease-in-out infinite;
+  }
+
+  .pulse-button::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    opacity: 0;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--accent)) 100%
+    );
+    animation: pulse-ring 2s ease-in-out infinite;
+    z-index: -1;
+  }
+
+  @keyframes pulse-scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes pulse-ring {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(1.05);
+    }
+  }
 }

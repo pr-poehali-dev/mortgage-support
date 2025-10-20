@@ -178,7 +178,7 @@ const BudgetCalculatorSection = () => {
           <div className="mt-8 text-center">
             <a 
               href="#application-form"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all hover:scale-105 pulse-button"
             >
               <Icon name="Send" size={20} />
               Узнать точную сумму одобрения

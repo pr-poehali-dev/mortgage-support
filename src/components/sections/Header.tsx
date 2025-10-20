@@ -45,7 +45,7 @@ const Header = ({ onTelegramClick }: HeaderProps) => {
             <Icon name="Send" size={16} />
             Telegram
           </Button>
-          <Button onClick={onTelegramClick} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift">Оставить заявку</Button>
+          <Button onClick={onTelegramClick} size="sm" className="bg-gradient-to-r from-primary to-accent hover-gradient-shift pulse-button">Оставить заявку</Button>
         </div>
       </div>
     </nav>

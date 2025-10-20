@@ -50,7 +50,7 @@ const HeroSection = ({ onTelegramClick }: HeroSectionProps) => {
             Помогаем получить одобрение и оформить ипотеку на самых выгодных условиях
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" onClick={onTelegramClick} className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover-gradient-shift">
+            <Button size="lg" onClick={onTelegramClick} className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover-gradient-shift pulse-button">
               Получить консультацию
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border bg-muted/50 hover:bg-muted hover:border-primary transition-all">

@@ -195,7 +195,7 @@ const CalculatorSection = ({
 
               <Button 
                 size="lg" 
-                className="w-full bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6"
+                className="w-full bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6 pulse-button"
                 onClick={() => {
                   const formSection = document.getElementById('application-form');
                   if (formSection) {

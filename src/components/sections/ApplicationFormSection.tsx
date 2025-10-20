@@ -111,7 +111,7 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
                     <Button 
                       type="submit" 
                       size="lg" 
-                      className="bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6"
+                      className="bg-gradient-to-r from-primary to-accent hover-gradient-shift text-lg py-6 pulse-button"
                     >
                       Отправить заявку
                       <Icon name="Send" className="ml-2" size={20} />
@@ -188,7 +188,7 @@ const ApplicationFormSection = ({ onSubmit }: ApplicationFormSectionProps) => {
             <Button
               type="button"
               onClick={handleConfirmConsent}
-              className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover-gradient-shift"
+              className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover-gradient-shift pulse-button"
             >
               <Icon name="Check" size={18} className="mr-2" />
               Подтверждаю
