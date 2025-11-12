@@ -12,7 +12,7 @@ const BudgetCalculatorSection = () => {
   const availableForPayment = monthlyIncome - monthlyExpenses;
   const maxMonthlyPayment = Math.floor(availableForPayment * 0.5);
   const maxLoanAmount = Math.floor(maxMonthlyPayment * 12 * 20 * 0.7);
-  const recommendedDownPayment = Math.floor(maxLoanAmount * 0.25);
+  const recommendedDownPayment = Math.floor(maxLoanAmount * 0.20);
   const totalBudget = maxLoanAmount + recommendedDownPayment;
 
   const formatNumber = (num: number) => {
@@ -149,7 +149,7 @@ const BudgetCalculatorSection = () => {
                       <p className="text-2xl font-bold text-green-600">{formatNumber(hasCoDebtor ? recommendedDownPayment * 2 : recommendedDownPayment)} ₽</p>
                     </div>
                   </div>
-                  <p className="text-xs text-muted-foreground">Рекомендуемые 25%</p>
+                  <p className="text-xs text-muted-foreground">Рекомендуемые 20%</p>
                 </div>
 
                 <div className="bg-gradient-to-r from-primary to-accent rounded-lg p-6 shadow-lg mt-4">
