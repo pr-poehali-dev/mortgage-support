@@ -15,7 +15,7 @@ import FloatingButtons from '@/components/sections/FloatingButtons';
 import PromoPopup from '@/components/PromoPopup';
 import ScrollToTop from '@/components/ScrollToTop';
 import QuizSection from '@/components/QuizSection';
-import SavingsCalculator from '@/components/sections/SavingsCalculator';
+
 import BudgetCalculatorSection from '@/components/sections/BudgetCalculatorSection';
 
 const Index = () => {
@@ -149,7 +149,6 @@ const Index = () => {
           onMortgageProgramChange={setMortgageProgram}
           onTelegramClick={openTelegram}
         />
-        <SavingsCalculator />
         <ReviewsSection reviews={reviews} />
         <FAQSection />
         <Footer />
