@@ -6,7 +6,7 @@ interface HeroSectionProps {
   onTelegramClick: () => void;
 }
 
-const AnimatedCounter = ({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) => {
+const AnimatedCounter = ({ target, suffix = '', duration = 4000 }: { target: number; suffix?: string; duration?: number }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
