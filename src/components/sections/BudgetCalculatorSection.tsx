@@ -52,13 +52,13 @@ const BudgetCalculatorSection = () => {
                     value={[monthlyIncome]}
                     onValueChange={(value) => setMonthlyIncome(value[0])}
                     min={30000}
-                    max={300000}
-                    step={5000}
+                    max={1000000}
+                    step={10000}
                     className="mb-1"
                   />
                   <div className="flex justify-between text-xs text-muted-foreground">
                     <span>30 000 ₽</span>
-                    <span>300 000 ₽</span>
+                    <span>1 000 000 ₽</span>
                   </div>
                 </div>
 
@@ -71,13 +71,13 @@ const BudgetCalculatorSection = () => {
                     value={[monthlyExpenses]}
                     onValueChange={(value) => setMonthlyExpenses(value[0])}
                     min={10000}
-                    max={200000}
-                    step={5000}
+                    max={1000000}
+                    step={10000}
                     className="mb-1"
                   />
                   <div className="flex justify-between text-xs text-muted-foreground">
                     <span>10 000 ₽</span>
-                    <span>200 000 ₽</span>
+                    <span>1 000 000 ₽</span>
                   </div>
                 </div>
 
